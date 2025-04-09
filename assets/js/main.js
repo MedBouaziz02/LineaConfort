@@ -170,27 +170,28 @@ document.addEventListener("DOMContentLoaded", function() {
   
     });
     function animateCounters() {
-        const counters = document.querySelectorAll('.counter');
-        const speed = 200; // Vitesse de l'animation (plus petit = plus rapide)
-    
-        counters.forEach(counter => {
-          const updateCount = () => {
-            const target = +counter.getAttribute('data-count');
-            const count = +counter.innerText;
-    
-            // Incrémentation
-            const increment = target / speed;
-    
-            if (count < target) {
-              counter.innerText = Math.ceil(count + increment);
-              setTimeout(updateCount, 10); // Mise à jour toutes les 10ms
-            } else {
-              counter.innerText = target; // Fixe la valeur finale
-            }
-          };
-    
-          updateCount();
-        });
+        // Exemple simple d'animation avec ajout du +
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+  const updateCount = () => {
+    const target = +counter.getAttribute('data-count');
+    const count = +counter.innerText.replace('+', '');
+
+    const speed = 200;
+    const increment = Math.ceil(target / speed);
+
+    if (count < target) {
+      counter.innerText = '+' + (count + increment);
+      setTimeout(updateCount, 10);
+    } else {
+      counter.innerText = '+' + target;
+    }
+  };
+
+  updateCount();
+});
+
       }
     
       // Lancer l'animation lorsque la section est visible
