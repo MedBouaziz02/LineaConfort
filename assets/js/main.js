@@ -1,6 +1,18 @@
 
 (function() {
+  document.addEventListener('DOMContentLoaded', () => {
+    const currentYear = new Date().getFullYear();
 
+    const startYear = 2012;
+
+    const yearsOfExperience = currentYear - startYear;
+
+    const experienceElement = document.querySelector('.stat h2.counter[data-count="13"]');
+
+    if (experienceElement) {
+        experienceElement.setAttribute('data-count', yearsOfExperience);
+    }
+});
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll("a[href^='#']").forEach(anchor => {
         anchor.addEventListener("click", function(e) {
@@ -15,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+document.getElementById("year").textContent = new Date().getFullYear();
 
     "use strict";
   

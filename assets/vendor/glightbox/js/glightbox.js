@@ -385,7 +385,7 @@
       }
       return;
     }
-    found = document.querySelectorAll('script[src="' + url + '"]');
+    found = document.querySelectorAll('script[src="../' + url + '"]');
     if (found && found.length > 0) {
       if (isFunction(callback)) {
         if (isString(waitFor)) {

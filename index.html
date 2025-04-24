@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Accueil - Linea Confort</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="Linea Confort Tunisie : Représentant exclusif Olmo pour mousses italiennes B2B & fabricant de canapés haut de gamme. Qualité, confort, innovation pour entreprises en Afrique du Nord." />
+  <meta name="keywords" content="Linea Confort, mousse italienne B2B, Olmo Group, représentant Olmo Tunisie, transformation mousse, fabrication canapés, canapés haut de gamme, mousse polyuréthane, literie professionnelle, ameublement B2B, Tunisie, Afrique du Nord, qualité, confort, innovation" />
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/css/flag-icons.min.css" />
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -35,9 +36,8 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-              <img src="assets/img/Logo.png" alt="">
+              <img src="assets/img/Logo.png" alt="Logo Linea Confort">
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Accueil<br></a></li>
@@ -83,10 +83,17 @@
               </li>
             </ul>
           </li>
-                    <li><a href="produittoscanagomma.html">Produits Toscana Gomma</a></li>
+          <li><a href="produittoscanagomma.html">Produits Toscana Gomma</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="certifications.html">Certifications</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li class="dropdown lang-switcher">
+            <a href="#"><span class="fi fi-fr"></span> &nbsp; <span>FR</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="en/index.html">English</a></li>
+              <li><a href="ar/index.html">العربية</a></li>
+            </ul>
+          </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -361,6 +368,7 @@
             <ul>
               <li><a href="services.html#bloc">Polyuréthane en bloc</a></li>
               <li><a href="services.html#plaque">Polyuréthane en plaque</a></li>
+              <li><a href="services.html#gabarit">Coupage en gabarit</a></li>
               <li><a href="services.html#rouleaux">Rouleaux de feuille continue</a></li>
               <li><a href="services.html#canape">Fabrication de canapés en cuir et tissu</a></li>
               <li><a href="services.html#oreillers">Oreillers</a></li>
@@ -385,7 +393,7 @@
     </div>
 
     <div class="container copyright text-center">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">LineaConfort</strong> <span>All Rights Reserved</span></p>
+      <p>© <span id="year"></span> <span>Copyright</span> <strong class="px-1 sitename">LineaConfort</strong> <span>All Rights Reserved</span></p>
     </div>
 
   </footer>
@@ -411,7 +419,7 @@
   <script>
     AOS.init();
   </script>
-  
+
 </body>
 
 </html>

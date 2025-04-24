@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>OREILLERS | VENICE</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="Venice par Olmo : l'oreiller viscoélastique ergonomique B2B. Mousse Casanova® pour soutien cervical naturel et confort optimal en Afrique du Nord. Distribué par Linea Confort Tunisie." />
+  <meta name="keywords" content="Venice, Oreiller Venice, oreiller viscoélastique B2B, coussin viscoélastique, oreiller mémoire de forme, mousse Casanova, Casanova mousse, oreiller ergonomique, soutien cervical oreiller, détente cervicale, confort sommeil, literie viscoélastique B2B, hôtellerie literie confort, oreiller italien, Olmo Oreillers, Linea Confort, Afrique du Nord" />
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/css/flag-icons.min.css" />
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -35,7 +36,7 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-              <img src="assets/img/Logo.png" alt="">
+              <img src="assets/img/Logo.png" alt="Logo Linea Confort">
 
       </a>
       <nav id="navmenu" class="navmenu">
@@ -87,6 +88,13 @@
           <li><a href="services.html">Services</a></li>
           <li><a href="certifications.html">Certifications</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li class="dropdown lang-switcher">
+            <a href="#"><span class="fi fi-fr"></span> &nbsp; <span>FR</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="en/venice.html">English</a></li>
+              <li><a href="ar/venice.html">العربية</a></li>
+            </ul>
+          </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -152,7 +160,7 @@
              <!-- Section Titre + Bouton -->
              <div class="d-flex justify-content-between align-items-center">
               <h2 class="title">VENICE</h2>
-              <button type="button" class="btn" style="background-color: #17283b; color: white;">Données techniques</button>
+              <button type="button" class="btn" onclick="window.open('assets/Files/venice.pdf', '_blank')"  style="background-color: #17283b; color: white;">Données techniques</button>
             </div>
                 <!-- Contenu du texte -->
                 <div class="content">
@@ -178,8 +186,7 @@
       </div>
     </div>
 
-  </main>
-  <section id="statistics" class="statistics section dark-background">
+    <section id="statistics" class="statistics section dark-background">
     <div class="container">
       <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
         <div class="col-xl-10 text-center">
@@ -247,6 +254,7 @@
             <ul>
               <li><a href="services.html#bloc">Polyuréthane en bloc</a></li>
               <li><a href="services.html#plaque">Polyuréthane en plaque</a></li>
+              <li><a href="services.html#gabarit">Coupage en gabarit</a></li>
               <li><a href="services.html#rouleaux">Rouleaux de feuille continue</a></li>
               <li><a href="services.html#canape">Fabrication de canapés en cuir et tissu</a></li>
               <li><a href="services.html#oreillers">Oreillers</a></li>
@@ -271,7 +279,7 @@
     </div>
 
     <div class="container copyright text-center">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">LineaConfort</strong> <span>All Rights Reserved</span></p>
+      <p>© <span id="year"></span> <span>Copyright</span> <strong class="px-1 sitename">LineaConfort</strong> <span>All Rights Reserved</span></p>
     </div>
 
   </footer>
